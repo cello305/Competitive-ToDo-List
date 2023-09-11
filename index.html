@@ -10,15 +10,15 @@
   
   <div class = "super-container">
 
-  <p style="color: whitesmoke;"><big>To-do List</big></p>
+  <p style="color: whitesmoke;"><big>To Do List</big></p>
   
   <div class = "menu-container">
     <input type="text" id="userInput">
-    <button type="button" onclick="createItem()">Try it</button>
+    <button type="button" onclick="createItem()">Add todo</button>
+    <!-- <button id="editButton" onclick="editItem()">Edit</button> -->
     
   </div>
 
-  <!--This is where the inputs are shown or submitted-->
   <div > 
     <p id="submitValue"></p>
   </div>
@@ -26,18 +26,49 @@
 
 </div>
 
-
-  <nav class="leadBoard">
-    <div class = "leadHeader">Leader Board</div>
-
+<!--
+<button class="leadBoard">Leaderboard</button>
+<div class="leadBoardContent">
+  <p>Leaderboard</p>
+    
     <ol>
       <li> Manny </li>
       <li> Massimo </li>
       <li> Mojeed </li>
     </ol>
-    
-  </nav>
+</div>
+-->
 
+<button class="collapsible">Leaderboard</button>
+<div class="content">
+  <div>
+  <ol>
+    <li> Manny </li>
+    <li> Massimo </li>
+    <li> Mojeed </li>
+    <li> James </li>
+    
+  </ol>
+</div>
+</div>
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
   <script src="crud.js"></script>
   
 </body>

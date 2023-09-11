@@ -19,24 +19,26 @@ function createItem() {
         for (i = 0; i < todoList.length; ++i) {
             let li = document.createElement('li');
             li.innerText = todoList[i];
-            list.appendChild(li);
+            list.appendChild(li) + editItem();
+        }
 
+    function editItem(){
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "img_pulpit.jpg");
+        x.setAttribute("width", "10");
+        x.setAttribute("height", "10");
+        document.body.appendChild(x);
+      }
+    }
 
-    console.log(todoList)
-}
+    function deleteItem(){
 
-//document.getElementById("addButton").addEventListener("click", todoList)
+    }
 
-function readItem(){
-    console.log(todoList);
-}
-
-function updateItem(){
-    // const updatedList = 
-}
-
-function deleteItem(){
-
-}
-};
 crud.addEventListener ("click", createItem)
+
+  end_button.addEventListener("click", function() {
+    paragraph.contentEditable = false;
+  } );
+
+  
