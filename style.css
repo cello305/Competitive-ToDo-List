@@ -3,37 +3,77 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     
-    background-color: #f7e8d5;
+    background-image: url(background-image.jpg);
+    background-color: #cccccc;
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
   }
 
-  .backImgIndex{
+  
 
-    background-image: url(background-image.jpg);
-  background-color: #cccccc;
-  height: 500px;
-  width: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  opacity: 1;
-    
+  .super-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+  
+  }
+
+  #submitValue {
+
+    border-color: whitesmoke;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: whitesmoke;
+   
+
+
+  }
+
+  .menu-container {
+
+    border-color: rgb(245, 201, 118);
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(245, 201, 118);
+
+  }
+
+
+  .speech-bubble {
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 10px; /* Add some spacing between speech bubble and remove button */
   }
   
-  /*.menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f7e8d5;
-    
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px; /* Adjust this value to control the position of the tail */
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ffffff;
+    border-bottom: 15px solid transparent;
+    transform: translateY(-50%);
   }
-*/
   
   .menu {
     font-size: 18px;
@@ -57,5 +97,23 @@ body {
   
   .menu-button:hover {
     background-color: #0056b3;
+  }
+
+  .leadHeader{
+    text-align: center;
+    margin-top: 5px;
+
+  }
+  
+  .leadBoard {
+  
+    width: 20%;
+    height: 100vh; 
+    background-color: rgb(245, 201, 118);
+    position: absolute;
+  left: 0;
+  top: 0; 
+  padding: 1px; 
+    
   }
   

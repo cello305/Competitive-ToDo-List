@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" type="text/css" href="style.css"> 
 <head>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+<body>
+  
+  <div class = "super-container">
 
-<body id="body1">
-<div class = "backImgIndex"> 
-  <div class="menu-container">
-    <div id="demo" class="menu"></div>
-    <div id="todo-container">
-      <input type="text" id="todoInput" placeholder="Enter a new to-do">
-      <button id="addTodoButton">Add To-Do</button>
-      <button id="showTodoListButton">Show Todo List</button>
-    </div>
-
-    <div id="list-container"></div>
+  <p style="color: whitesmoke;"><big>To-do List</big></p>
+  
+  <div class = "menu-container">
+    <input type="text" id="userInput">
+    <button type="button" onclick="createItem()">Try it</button>
+    
   </div>
+
+  <!--This is where the inputs are shown or submitted-->
+  <div > 
+    <p id="submitValue"></p>
+  </div>
+
+
 </div>
-  <script src="script.js"></script>
+
+
+  <nav class="leadBoard">
+    <div class = "leadHeader">Leader Board</div>
+
+    <ol>
+      <li> Manny </li>
+      <li> Massimo </li>
+      <li> Mojeed </li>
+    </ol>
+    
+  </nav>
+
+  <script src="crud.js"></script>
+  
 </body>
 </html>
