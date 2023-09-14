@@ -10,7 +10,7 @@ function createItem() {
     //todoList = []
     const x = userInput.value;
     //submitValue.innerHTML = x;
-    todoList.push(x)
+    todoList.push(x)  
     //userInput.value = "";
     
         submitValue.innerHTML = "Added item: " + x;
@@ -18,17 +18,25 @@ function createItem() {
         let list = document.getElementById("submitValue");
         for (i = 0; i < todoList.length; ++i) {
             let li = document.createElement('li');
-            li.innerText = todoList[i];
-            list.appendChild(li) + editItem();
+            let buttonX = document.createElement('deleteItem');
+            // buttonX =  <button type="button">Delete Item</button>
+            li.innerText = todoList[i] + " " + buttonX;
+            list.appendChild(li);
+            
+            
+          
+          //James's attempt
+          
         }
 
-    function editItem(){
-        var x = document.createElement("IMG");
-        x.setAttribute("src", "img_pulpit.jpg");
-        x.setAttribute("width", "10");
-        x.setAttribute("height", "10");
-        document.body.appendChild(x);
+    function editItem(text){
+       let editText = document.createTextNode("\u00D7")
+       editText
       }
+    }
+
+function button() {
+    
     }
 
     function deleteItem(){
