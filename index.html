@@ -10,16 +10,14 @@
   
   <div class = "super-container">
 
-  <p style="color: whitesmoke;"><big>To Do List</big></p>
+  <p style="color: whitesmoke; font-size: larger;"><strong>To Do List</strong></p>
   
   <div class = "menu-container">
     <input type="text" id="userInput">
     <button type="button" onclick="createItem()">Add todo</button>
-    <!-- <button id="editButton" onclick="editItem()">Edit</button> -->
   </div>
   <div > 
-    <p id="submitValue">✓</p>
-     <span id = "remove"> x  </span>
+    <p id="submitValue" style="list-style: none;"></p>
     
   </div>
 
@@ -35,10 +33,12 @@
     <li> Massimo </li>
     <li> Mojeed </li>
     <li> James </li>
-    
+    <p id="scoreMarker" style="font-weight:bold;">Score: </p>
+    <p id="score" style="font-weight:bold;">.</p>
   </ol>
 </div>
 </div>
+
 <script>
 
 var coll = document.getElementsByClassName("collapsible");

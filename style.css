@@ -99,54 +99,6 @@ body {
     background-color: #0056b3;
   }
 
- /*
-  .leadHeader{
-    text-align: center;
-    margin-top: 5px;
-
-  }
-  
-  .leadBoard {
-  
-    width: 20%;
-    cursor: pointer;
-    background-color: rgb(245, 201, 118);
-    position: absolute;
-  left: 0;
-  top: 0; 
-  border: none;
-  padding: 18px; 
-    
-  }
-
-  .active, .leadBoard:hover {
-    background-color: rgb(243, 182, 70); 
-  }
-
-  .leadBoard:after {
-    content: '\002B';
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-  .active:after {
-
-    content: "\2212";
-  }
-
-  .leadBoardContent {
-
-    padding: 0 18px;
-    max-height:0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: rgb(243, 182, 70); 
-    position: absolute;
-    text-align: center;
-    color: white;
-  }
-  */
 
   .collapsible {
     width: 20%;
